@@ -1,5 +1,9 @@
+$(document).ready(function() {
+  $('.nav li a ').click(function () {
+      $('.nav li a .collapse').removeClass('in');
+  });
+});
 (function () {
-
     var app = angular.module('application', ['angularUtils.directives.dirPagination']);
  
     app.controller('ManageAnnounceController', function ($scope,$http){

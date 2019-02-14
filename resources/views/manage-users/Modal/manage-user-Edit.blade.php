@@ -28,7 +28,7 @@
             <input class="form-control" type="text" id="pasword" >
             </div>
             </div>
-            <div class="row" style="margin-top: 10px;">
+            <div class="row" style="margin-top: 20px;">
             <div class="col-lg-6">
             <p class="profiletext">ชื่อ-นามสกุล</p>
             <input class="form-control" type="text" id="lastname" >
@@ -38,7 +38,7 @@
             <input class="form-control" type="text" id="nickname" >
             </div>
             </div>
-            <div class="row" style="margin-top: 10px;">
+            <div class="row" style="margin-top: 20px;">
             <div class="col-lg-6">
             <p class="profiletext">เพศ</p>
             <input class="form-control" type="text" id="gender" >
@@ -48,7 +48,7 @@
             <input class="form-control" type="text" id="idcard" >
             </div>
             </div>
-            <div class="row" style="margin-top: 10px;">
+            <div class="row" style="margin-top: 20px;">
             <div class="col-lg-6">
             <p class="profiletext">ป้าย</p>
             <input class="form-control" type="text" id="gender" >
@@ -58,19 +58,19 @@
             <input class="form-control" type="text" id="idcard" >
             </div>
             </div>
-            <div class="row" style="margin-top: 10px;">
+            <div class="row" style="margin-top: 20px;">
             <div class="col-lg-12">
             <p class="profiletext">พื้นที่</p>
             <input class="form-control" type="text" id="area1" >
             </div>
           </div>
-          <div class="row" style="margin-top: 10px;">
+          <div class="row" style="margin-top: 20px;">
             <div class="col-lg-12">
             <p class="profiletext">พื้นที่2</p>
             <input class="form-control" type="text" id="area2" >
             </div>
           </div>
-          <div class="row" style="margin-top: 10px;">
+          <div class="row" style="margin-top: 20px;">
               <div class="col-lg-6">
               <p class="profiletext">วันที่ลงทะเบียน</p>
               <input class="form-control" type="text" id="datebegin" disabled>
@@ -102,7 +102,7 @@
             <input class="form-control" type="text" id="email" >
             </div>
             </div>
-            <div class="row" style="margin-top: 10px;">
+            <div class="row" style="margin-top: 20px;">
             <div class="col-lg-6">
             <p class="profiletext">Line</p>
             <input class="form-control" type="text" id="line" >
@@ -112,7 +112,7 @@
             <input class="form-control" type="text" id="facebook" >
             </div>
             </div>
-            <div class="row" style="margin-top: 10px;">
+            <div class="row" style="margin-top: 20px;">
             <div class="col-lg-6">
             <p class="profiletext">Instagram</p>
             <input class="form-control" type="text" id="instagram" >
@@ -122,14 +122,14 @@
             <input class="form-control" type="text" id="twitter" >
             </div>
             </div>
-            <div class="row" style="margin-top: 10px;">
+            <div class="row" style="margin-top: 20px;">
             <div class="col-lg-12">
             <p class="profiletext">ที่อยู่</p>
-            <textarea class="form-control" rows="4" id="address"></textarea>
+            <input class="form-control" type="text" id="address" >
             </div>
             </div>
-            <div class="row" style="margin-top: 10px;">
-            <div class="col-lg-12">
+            <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-6">
             <p class="profiletext">จังหวัด</p>
             <input class="form-control" list="city" name="city">
             <datalist id="city">
@@ -219,9 +219,36 @@
               <option value="อำนาจเจริญ"></option>                                 
             </datalist>
             </div>
+            <div class="col-lg-6">
+              <p class="profiletext">อำเภอ</p>
+                <select class="form-control" id="productgroup">
+								  <option value="เมือง">เมือง</option>
+                  <option value="บ้านธิ">บ้านธิ</option>
+                  <option value="บ้านโฮ่ง">บ้านโฮ่ง</option>
+									<option value="ลี้">ลี้</option>
+								</select>
+            </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-6">
+              <p class="profiletext">ตำบล</p>
+                <select class="form-control" id="productgroup">
+								  <option value="เมือง">เมือง</option>
+                  <option value="บ้านธิ">บ้านธิ</option>
+                  <option value="บ้านโฮ่ง">บ้านโฮ่ง</option>
+									<option value="ลี้">ลี้</option>
+								</select>
+            </div>
+            <div class="col-lg-6">
+              <p class="profiletext">รหัสไปรษณี</p>
+                <select class="form-control" id="productgroup">
+								  <option value="5100">5100</option>
+                  <option value="5700">5700</option>
+								</select>
+            </div>
             </div>
             <br>
-            <div class="row">
+            <div class="row" >
             <p class="profiletext">บัญชี</p>
             </div>
             <div class="row" >
@@ -233,15 +260,24 @@
             <p class="profiletext">ชื่อธนาคาร</p>
             <input class="form-control"list="bankname" name="bankname" >
             <datalist id="bankname">
-              <option value="Internet Explorer">
-              <option value="Firefox">
-              <option value="Chrome">
-              <option value="Opera">
-              <option value="Safari">
+              <option value="ธนาคารเกียรนาคิร">
+              <option value="ธนาคารกรุงเทพ">
+              <option value="ธนาคารกสิกรไทย">
+              <option value="ธนาคารกรุงไทย">
+              <option value="ธนาคารทหารไทย">
+              <option value="ธนาคารไทยพาณิชย์">
+              <option value="ธนาคารกรุงศรีอยุธยา">
+              <option value="ธนาคารซีไอเอ็มบีไทย">
+              <option value="ธนาคารทิสโก้">
+              <option value="ธนาคารธนชาต">
+              <option value="ธนาคารยูโอบี">
+              <option value="ธนาคารสแตนดาร์ดชาร์เตอร์ด(ไทย)">
+              <option value="ธนาคารออมสิน">
+              <option value="ธนาคารอิสลามแห่งประเทศไทย">
             </datalist>
             </div>
             </div>
-            <div class="row" style="margin-top: 10px;">
+            <div class="row" style="margin-top: 20px;">
             <div class="col-lg-6">
             <p class="profiletext">เลขบัญชี</p>
             <input class="form-control" type="text" id="bankid" >
@@ -250,15 +286,13 @@
             <p class="profiletext">ประเภทบัญชี</p>
             <input class="form-control"list="banktype" name="banktype" >
             <datalist id="banktype">
-              <option value="Internet Explorer">
-              <option value="Firefox">
-              <option value="Chrome">
-              <option value="Opera">
-              <option value="Safari">
+              <option value="กระแสรายวัน">
+              <option value="ออมทรัพย์">
+              <option value="ฝากประจำ">
             </datalist>
             </div>
             </div>
-            <div class="row" style="margin-top: 10px;">
+            <div class="row" style="margin-top: 20px;">
             <div class="col-lg-6">
             <p class="profiletext">สาขา</p>
             <input class="form-control" id="bankbranch" >

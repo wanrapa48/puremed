@@ -1,6 +1,7 @@
 (function () {
-	'use strict';
-    var app = angular.module('application', ['angularUtils.directives.dirPagination']);
+  'use strict';
+
+   var app = angular.module('application', ['angularUtils.directives.dirPagination']);
 
    app.controller('ManageUsersController', function ($scope,$http){
 
