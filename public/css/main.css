@@ -1017,7 +1017,7 @@ ul.activity-list > li {
     vertical-align: middle;
     height: 100%; }
   .auth-box .content {
-    display: inline-block;
+    display: inline-table;
     vertical-align: middle;
     *vertical-align: auto;
     *zoom: 1;

@@ -20,7 +20,7 @@
 </head>
 
 <body>
-	<!-- WRAPPER -->
+<!-- WRAPPER -->
 	<div id="wrapper">
 		<div class="vertical-align-wrap">
 			<div class="vertical-align-middle">
