@@ -10,7 +10,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div>
-               <img src="{{asset('storage/img/pic6.jpg')}}" id="imgannounce" class="img-responsive" >
+               <img src="{{asset('storage/img/announce/pic6.jpg')}}" id="imgannounce" class="img-responsive" >
             </div>
             <br>
               <input type="file" id="editfileUpload" accept="image/png, image/jpeg">
@@ -32,8 +32,8 @@
             </div>
             <br>
             <div class="row" style="text-align: right; padding-right: 20px;margin-top: 10%;">
-            <button type="submit" class="btnsave"  href="#modal-2" data-toggle="modal" data-dismiss="modal"><i ><img class="isave" src="{{asset('storage/img/i-save.png')}}"></i>บันทึก</button>
-          <button type="button" class="btncancel" data-dismiss="modal"><i><img class="icancel" src="{{asset('storage/img/i-cancel.png')}}"></i>ยกเลิก</button>
+            <button type="submit" class="btnsave"  href="#modal-2" data-toggle="modal" data-dismiss="modal"><i ><img class="isave" src="{{asset('storage/img/icon/i-save.png')}}"></i>บันทึก</button>
+          <button type="button" class="btncancel" data-dismiss="modal"><i><img class="icancel" src="{{asset('storage/img/icon/i-cancel.png')}}"></i>ยกเลิก</button>
         </div>
           </div>
         </div>
@@ -43,17 +43,17 @@
   </div>
 </div>
 
-  <!-- #modal 2 -->
+
   <div class="modal fade" id="modal-2">
 <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body">
             <div class="divsave">
-               <img src="{{asset('storage/img/i-5.png')}}" id="imgannounce" class="img-responsive" >
+               <img src="{{asset('storage/img/icon/i-5.png')}}" id="imgannounce" class="img-responsive" >
                <br>
                <p class="profilephoto">ทำรายการสำเร็จ</p>
                <br>
-               <button type="button"  ng-click="SavemodalSave()"  class="btnsave" ><i ><img class="isave" src="{{asset('storage/img/i-save.png')}}"></i>ตกลง</button>
+               <button type="button"  ng-click="SavemodalSave()"  class="btnsave" ><i ><img class="isave" src="{{asset('storage/img/icon/i-save.png')}}"></i>ตกลง</button>
             </div>
             </div>
         </div>

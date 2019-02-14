@@ -13,47 +13,47 @@
                         <div class="input-group">
                         <input class="form-control" type="text">
                                 <span class="input-group-btn">
-                                    <button  ng-click="SearchGitf()" class="edit-button" > <i><img src="{{asset('storage/img/i-1.png')}}"></i></button>
+                                    <button  ng-click="SearchGitf()" class="edit-button" > <i><img src="{{asset('storage/img/icon/i-1.png')}}"></i></button>
                                 </span>
                         </div>
                         </div>
                     </div>
                     <div class="row">
-                        <button ng-click="AddGitf()" class="add-button" > <i><img src="{{asset('storage/img/add.png')}}" class="imgadd"></i>เพิ่มข่าวสาร</button>
+                        <button ng-click="AddGitf()" class="add-button" > <i><img src="{{asset('storage/img/icon/add.png')}}" class="imgadd"></i>เพิ่มข่าวสาร</button>
                     </div>
                     <div class="panel">
 								<div class="panel-body">
-									<table class="table">
-										<thead>
-											<tr>
-												<th style="width: 5%; text-align: center;">ลำดับ</th>
-												<th style="width: 5%; text-align: center; ">รหัส</th>
-                                                <th style="width: 30%; text-align: center;">ชื่อหัวข้อ</th>
+									<table  style="width: 100%;">
+										<thead >
+											<tr class="trhead">
+												<th style="width: 10%; text-align: center;">ลำดับ</th>
+												<th style="width: 10%; text-align: center; ">รหัส</th>
+                                                <th style="width: 20%; text-align: center;">ชื่อหัวข้อ</th>
                                                 <th style="width: 10%; text-align: center;">ประเภท</th>
-                                                <th style="width: 20%; text-align: center;">วันที่เริ่มต้นกิจกรรม</th>
-                                                <th style="width: 20%; text-align: center;">วันที่สิ้นสุดกิจกรรม</th>
+                                                <th style="width: 15%; text-align: center;">วันที่เริ่มต้นกิจกรรม</th>
+                                                <th style="width: 15%; text-align: center;">วันที่สิ้นสุดกิจกรรม</th>
                                                 <th style="width: 10%; text-align: center;">คะแนน</th>
                                                 <th style="width: 5%; text-align: center;">แก้ไข</th>
                                                 <th style="width: 5%; text-align: center;">ลบ</th>
 											</tr>
 										</thead>
-										<tbody dir-paginate="itemsPerPage:10">
-                                            <tr>
-                                                <td><center>1</center></td>
-                                                <td><center>001</center></td>
-                                                <td><center>ทะเลหรรษา</center></td>
-                                                <td><center>ทริป</center></td>
-                                                <td><center>2018-02-01</center></td>
-                                                <td><center>2018-02-31</center></td>
-                                                <td><center>50</center></td>
-                                                <td> 
-                                                    <center><button ng-click="EditGift()" class="edit-button">
-                                                        <i><img src="{{asset('storage/img/i-3.png')}}"></i>
-                                                    </button></center></td>
-                                                <td>
-                                                    <center><button ng-click="DeleteGitf()" class="delete-button">
-                                                        <i><img src="{{asset('storage/img/i-2.png')}}"></i>
-                                                    </button></center></td></td>
+										<tbody dir-paginate="data in giftall|itemsPerPage:10">
+                                            <tr style="text-align: center;">
+                                                <td style="padding-top: 25px;">@{{data.index}}</td>
+                                                <td style="padding-top: 25px;">@{{data.id_gift}}</td>
+                                                <td style="padding-top: 25px;">@{{data.titel_trip}}</td>
+                                                <td style="padding-top: 25px;">@{{data.promotion_type}}</td>
+                                                <td style="padding-top: 25px;">@{{data.datestart_trip}}</td>
+                                                <td style="padding-top: 25px;">@{{data.dateend_trip}}</td>
+                                                <td style="padding-top: 25px;">@{{data.score_trip}}</td>
+                                                <td style="padding-top: 25px;"> 
+                                                    <button ng-click="EditGif()" class="edit-button">
+                                                        <i><img src="{{asset('storage/img/icon/i-3.png')}}"></i>
+                                                    </button></td>
+                                                <td style="padding-top: 25px;">
+                                                    <button ng-click="DeleteGitf()" class="delete-button">
+                                                        <i><img src="{{asset('storage/img/icon/i-2.png')}}"></i>
+                                                    </button></td>
                                             </tr>
 										</tbody>
                                     </table>
@@ -67,11 +67,11 @@
                                 </nav>
                 </div>
 			</div>
-			<!-- END MAIN CONTENT -->
+            <!-- END MAIN CONTENT -->
+            @include('manage-gift.Modal.manage-gift-Add')
+            @include('manage-gift.Modal.manage-gift-Edit')
+            @include('modal-center.confirm-Delete')
 		</div>
         <!-- END MAIN -->
-        @include('manage-gift.Modal.manage-gift-Add')
-        @include('manage-gift.Modal.manage-gift-Edit')
-        @include('modal-center.confirm-Delete')
         <script src="{{asset('js/manage/manga-gift/form.js')}}"></script>
 @endsection

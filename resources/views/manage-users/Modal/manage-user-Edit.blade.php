@@ -10,7 +10,7 @@
         <div class="row">
           <div class="col-lg-5">
           <p class="profilephoto">รูปโปรไฟล์</p>
-          <img src="{{asset('storage/img/pic2.png')}}" id="Photouser" class="img-responsive" >
+          <img src="{{asset('storage/img/user/pic2.png')}}" id="Photouser" class="img-responsive" >
           <br>
           <!--<input ng-click="addPhotofile()" type="file" id="files">-->
           <input type="file" id="fileUpload" accept="image/png, image/jpeg">
@@ -82,7 +82,7 @@
           <div class="row">
             <div class="col-lg-5">
             <p class="profilephoto">รูปบัตรประจำตัว</p>
-          <img src="{{asset('storage/img/card.png')}}" id="Photocard" class="img-responsive" >
+          <img src="{{asset('storage/img/user/card.png')}}" id="Photocard" class="img-responsive" >
           <br>
           <input type="file" id="filecardUpload" accept="image/png, image/jpeg">
           <button ng-click="addPhotocardfile()" id="customButton">เลือกไฟล์</button>  
@@ -268,8 +268,8 @@
         </div>
         <br>
         <div class="row" style="text-align: right; padding-right: 20px;">
-          <button type="submit" class="btnsave"  ng-click="Savemodal()" ><i ><img class="isave" src="{{asset('storage/img/i-save.png')}}"></i>บันทึก</button>
-          <button type="button" class="btncancel" data-dismiss="modal"><i><img class="icancel" src="{{asset('storage/img/i-cancel.png')}}"></i>ยกเลิก</button>
+          <button type="submit" class="btnsave"  ng-click="Savemodal()" ><i ><img class="isave" src="{{asset('storage/img/icon/i-save.png')}}"></i>บันทึก</button>
+          <button type="button" class="btncancel" data-dismiss="modal"><i><img class="icancel" src="{{asset('storage/img/icon/i-cancel.png')}}"></i>ยกเลิก</button>
         </div>
         </form>
       </div>

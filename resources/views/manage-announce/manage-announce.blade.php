@@ -13,19 +13,19 @@
                         <div class="input-group">
                         <input class="form-control" type="text">
                                 <span class="input-group-btn">
-                                    <button  class="edit-button" > <i><img src="{{asset('storage/img/i-1.png')}}"></i></button>
+                                    <button  class="edit-button" > <i><img src="{{asset('storage/img/icon/i-1.png')}}"></i></button>
                                 </span>
                         </div>
                         </div>
                     </div>
                     <div class="row">
-                        <button  ng-click="AddAnnounce()" class="add-button" > <i><img src="{{asset('storage/img/add.png')}}" class="imgadd"></i>เพิ่มข่าวสาร</button>
+                        <button  ng-click="AddAnnounce()" class="add-button" > <i><img src="{{asset('storage/img/icon/add.png')}}" class="imgadd"></i>เพิ่มข่าวสาร</button>
                     </div>
                     <div class="panel">
 								<div class="panel-body">
 									<table style="width: 100%;">
 										<thead>
-											<tr style="height: 50px;border-bottom: 1px solid black;">
+											<tr class="trhead">
 												<th style="width: 10%; text-align: center;">ลำดับ</th>
 												<th style="width: 10%; text-align: center; ">รหัส</th>
 												<th style="width: 10%; text-align: center;">ชื่อผู้ใช้</th>
@@ -44,11 +44,11 @@
                                                 <td style="padding-top: 25px;"><center>@{{data.date_announce}}</center></td>
                                                 <td style="padding-top: 25px;"> 
                                                     <center><button ng-click="EditAnnounce()" class="edit-button">
-                                                        <i><img src="{{asset('storage/img/i-3.png')}}"></i>
+                                                        <i><img src="{{asset('storage/img/icon/i-3.png')}}"></i>
                                                     </button></center></td>
                                                 <td style="padding-top: 25px;">
                                                     <center><button ng-click="DeleteAnnounce()" class="delete-button">
-                                                        <i><img src="{{asset('storage/img/i-2.png')}}"></i>
+                                                        <i><img src="{{asset('storage/img/icon/i-2.png')}}"></i>
                                                     </button></center></td></td>
                                             </tr>
 										</tbody>

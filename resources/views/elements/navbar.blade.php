@@ -3,7 +3,7 @@
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="brand">
-				<img src="{{asset('storage/img/logo.png')}}" class="imgnavbar">
+				<img src="{{asset('storage/img/logo/logo.png')}}" class="imgnavbar">
 			</div>
 			<div class="container-fluid">
 				<div class="navbar-btn">
@@ -12,7 +12,7 @@
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{{asset('storage/img/user.png')}}" alt="Avatar">PFH Official<i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="{{asset('storage/img/icon/user.png')}}" alt="Avatar">PFH Official<i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href="#"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>

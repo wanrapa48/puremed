@@ -1,7 +1,7 @@
 @extends('layouts.app-element')
 @section('content')
 		<!-- MAIN -->
-		<div class="main">
+		<div class="main"  ng-controller="ControlPanelController" ng-cloak>
 			<!-- MAIN CONTENT -->
 			<div class="main-content">
 				<div class="container-fluid">
@@ -15,7 +15,7 @@
 							<div class="row">
 								<div class="col-md-3">
 									<div class="metric">
-										<img src="{{asset('storage/img/d-1.png')}}" class="iconpd">
+										<img src="{{asset('storage/img/icon/d-1.png')}}" class="iconpd">
 										<p class="pd">
 											<span class="number">2,000</span>
 											<span class="title">ยอดขาย</span>
@@ -24,7 +24,7 @@
 								</div>
 								<div class="col-md-3">
 									<div class="metric">
-										<img src="{{asset('storage/img/d-2.png')}}" class="iconpd">
+										<img src="{{asset('storage/img/icon/d-2.png')}}" class="iconpd">
 										<p  class="pd">
 											<span class="number">5,000</span>
 											<span class="title">ผู้เข้าชม</span>
@@ -33,7 +33,7 @@
 								</div>
 								<div class="col-md-3">
 									<div class="metric">
-										<img src="{{asset('storage/img/d-3.png')}}" class="iconpd">
+										<img src="{{asset('storage/img/icon/d-3.png')}}" class="iconpd">
 										<p  class="pd">
 											<span class="number">500</span>
 											<span class="title">ผู้ใช้งาน</span>
@@ -42,7 +42,7 @@
 								</div>
 								<div class="col-md-3">
 									<div class="metric">
-										<img src="{{asset('storage/img/d-4.png')}}" class="iconpd">
+										<img src="{{asset('storage/img/icon/d-4.png')}}" class="iconpd">
 										<p  class="pd">
 											<span class="number">50%</span>
 											<span class="title">เป้าหมาย</span>
@@ -78,7 +78,7 @@
 		</div>
 		<!-- END MAIN -->
 		<script src="{{asset('vendor/chartist/js/chartist.min.js')}}"></script>
-		<!--<script src="{{asset('js/manage/manage-controlpanel/form.js')}}"></script>-->
+		<script src="{{asset('js/manage/manage-controlpanel/form.js')}}"></script>
 		<script>
 			var data, options;
 

@@ -13,19 +13,19 @@
                         <div class="input-group">
                         <input class="form-control" type="text">
                                 <span class="input-group-btn">
-                                    <button ng-click="SearchCom()"  class="edit-button" > <i><img src="{{asset('storage/img/i-1.png')}}"></i></button>
+                                    <button ng-click="SearchCom()"  class="edit-button" > <i><img src="{{asset('storage/img/icon/i-1.png')}}"></i></button>
                                 </span>
                         </div>
                         </div>
                     </div>
                     <div class="row">
-                        <button ng-click="AddCom()" class="add-button" > <i><img src="{{asset('storage/img/add.png')}}" class="imgadd"></i>เพิ่มข่าวสาร</button>
+                        <button ng-click="AddCom()" class="add-button" > <i><img src="{{asset('storage/img/icon/add.png')}}" class="imgadd"></i>เพิ่มข่าวสาร</button>
                     </div>
                     <div class="panel">
 								<div class="panel-body">
-									<table class="table">
-										<thead>
-											<tr>
+									<table style="width: 100%;">
+										<thead >
+											<tr class="trhead">
 												<th style="width: 10%; text-align: center;">ลำดับ</th>
 												<th style="width: 20%; text-align: center; ">ระดับ</th>
                                                 <th style="width: 50%; text-align: center;">เงื่อนไข</th>
@@ -33,19 +33,19 @@
                                                 <th style="width: 10%; text-align: center;">ลบ</th>
 											</tr>
 										</thead>
-										<tbody dir-paginate="itemsPerPage:10">
-                                            <tr>
-                                                <td><center>1</center></td>
-                                                <td><center>VIP1</center></td>
-                                                <td><center>สิ่งสินค้าครบ 1000 ชิ้น อย่างเดียว X15</center></td>
-                                                <td> 
-                                                    <center><button ng-click="EditCom()" class="edit-button">
-                                                        <i><img src="{{asset('storage/img/i-3.png')}}"></i>
-                                                    </button></center></td>
-                                                <td>
-                                                    <center><button ng-click="DeleteCom()" class="delete-button">
-                                                        <i><img src="{{asset('storage/img/i-2.png')}}"></i>
-                                                    </button></center></td></td>
+										<tbody dir-paginate="data in comall|itemsPerPage:10">
+                                            <tr style="text-align: center;">
+                                                <td style="padding-top: 25px;">@{{data.index}}</td>
+                                                <td style="padding-top: 25px;">@{{data.level}}</td>
+                                                <td style="padding-top: 25px;">@{{data.detail}}</td>
+                                                <td style="padding-top: 25px;"> 
+                                                    <button ng-click="EditCom()" class="edit-button">
+                                                        <i><img src="{{asset('storage/img/icon/i-3.png')}}"></i>
+                                                    </button></td>
+                                                <td style="padding-top: 25px;">
+                                                    <button ng-click="DeleteCom()" class="delete-button">
+                                                        <i><img src="{{asset('storage/img/icon/i-2.png')}}"></i>
+                                                    </button></td></td>
                                             </tr>
 										</tbody>
                                     </table>
@@ -59,11 +59,11 @@
                                 </nav>
                 </div>
 			</div>
-			<!-- END MAIN CONTENT -->
+            <!-- END MAIN CONTENT -->
+            @include('manage-com.Modal.manage-com-Add')
+            @include('manage-com.Modal.manage-com-Edit')
+            @include('modal-center.confirm-Delete')
 		</div>
         <!-- END MAIN -->
-        @include('manage-com.Modal.manage-com-Add')
-        @include('manage-com.Modal.manage-com-Edit')
-        @include('modal-center.confirm-Delete')
         <script src="{{asset('js/manage/manga-com/form.js')}}"></script>
 @endsection

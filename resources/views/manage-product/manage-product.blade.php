@@ -13,13 +13,13 @@
                         <div class="input-group">
                         <input class="form-control" type="text">
                                 <span class="input-group-btn">
-                                    <button ng-click="SearcProduct()" class="edit-button" > <i><img src="{{asset('storage/img/i-1.png')}}"></i></button>
+                                    <button ng-click="SearcProduct()" class="edit-button" > <i><img src="{{asset('storage/img/icon/i-1.png')}}"></i></button>
                                 </span>
                         </div>
                         </div>
                     </div>
                     <div class="row">
-                        <button ng-click="AddProduct()" class="add-button" > <i><img src="{{asset('storage/img/add.png')}}" class="imgadd"></i>เพิ่มสินค้า</button>
+                        <button ng-click="AddProduct()" class="add-button" > <i><img src="{{asset('storage/img/icon/add.png')}}" class="imgadd"></i>เพิ่มสินค้า</button>
                     </div>
                     <div class="panel">
 								<div class="panel-body">
@@ -48,11 +48,11 @@
                                                 <td style="padding-top: 25px;">@{{data.price_agle}}</td>
                                                 <td style="padding-top: 25px;"> 
                                                    <button ng-click="EditProduct()" class="edit-button">
-                                                        <i><img src="{{asset('storage/img/i-3.png')}}"></i>
+                                                        <i><img src="{{asset('storage/img/icon/i-3.png')}}"></i>
                                                     </button></td>
                                                 <td style="padding-top: 25px;">
                                                     <button ng-click="DeleteProduct()" class="delete-button">
-                                                        <i><img src="{{asset('storage/img/i-2.png')}}"></i>
+                                                        <i><img src="{{asset('storage/img/icon/i-2.png')}}"></i>
                                                     </button></td>
                                             </tr>
 										</tbody>

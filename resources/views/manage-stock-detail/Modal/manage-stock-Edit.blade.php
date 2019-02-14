@@ -1,20 +1,34 @@
-<div class="modal fade" id="modal-managestock-Add" >
+<div class="modal fade" id="modal-managestock-Edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">เพิ่มสต๊อก</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">แก้ไขข้อมูลสต๊อก</h5>
       </div>
       <div class="modal-body">
         <form >
         {{csrf_field()}}
-        <div class="row" style="padding: 30px;">
-          <div class="col-lg-6">
-          <p class="profiletext">ชื่อ</p>
-              <input class="form-control" type="text" id="name" >
+        <div class="row" style="padding: 20px 30px 0px 30px;">
+          <div class="col-lg-12">
+          <p class="profiletext">ชื่อสินค้า</p>
+              <input class="form-control" type="text" id="productname" >
           </div>
-          <div class="col-lg-6">
-          <p class="profiletext">นามสกุล</p>
-              <input class="form-control" type="text" id="lastname" >
+        </div>
+        <div class="row" style="padding: 20px 30px 0px 30px;">
+        <div class="col-lg-12">
+          <p class="profiletext">ราคาสินค้า</p>
+              <input class="form-control" type="text" id="price_agle" >
+          </div>
+        </div>
+        <div class="row" style="padding: 20px 30px 0px 30px;">
+        <div class="col-lg-12">
+          <p class="profiletext">จำนวน</p>
+              <input class="form-control" type="number" id="amount" >
+          </div>
+        </div>
+        <div class="row" style="padding: 20px 30px 0px 30px;">
+        <div class="col-lg-12">
+          <p class="profiletext">คะแนน</p>
+              <input class="form-control" type="number" id="score" >
           </div>
         </div>
         <div class="row" style="text-align: right; padding-right: 20px;margin-top: 5%;">
@@ -26,6 +40,7 @@
     </div>
   </div>
 </div>
+
 
   <!-- #modal 2 -->
   <div class="modal fade" id="modal-2">

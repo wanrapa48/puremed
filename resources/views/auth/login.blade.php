@@ -28,7 +28,7 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img style="width: 50%;" src="{{asset('storage/img/logo.png')}}"></div>
+								<div class="logo text-center"><img style="width: 50%;" src="{{asset('storage/img/logo/logo.png')}}"></div>
 								<p class="lead">เข้าสู่ระบบจัดการข้อมูล</p>
 							</div>
 							<form class="form-auth-small" action="{{ route('ControlPanel') }}">

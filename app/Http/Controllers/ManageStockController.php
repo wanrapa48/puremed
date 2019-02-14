@@ -10,5 +10,10 @@ class ManageStockController extends Controller
 
         return view('manage-stock.manage-stock');
     }
+    public function Detaildata()
+    { 
+
+        return view('manage-stock-detail.manage-stock-Detail');
+    }
 }
 ?>

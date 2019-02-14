@@ -13,7 +13,7 @@
                         <div class="input-group">
                         <input class="form-control" type="text">
                                 <span class="input-group-btn">
-                                    <button  class="edit-button" > <i><img src="{{asset('storage/img/i-1.png')}}"></i></button>
+                                    <button  class="edit-button" > <i><img src="{{asset('storage/img/icon/i-1.png')}}"></i></button>
                                 </span>
                         </div>
                         </div>
@@ -22,7 +22,7 @@
 								<div class="panel-body">
 									<table  style="width: 100%;">
 										<thead>
-											<tr  style="height: 50px;border-bottom: 1px solid black;">
+											<tr  class="trhead">
 												<th style="width: 5%; text-align: center;">ลำดับ</th>
 												<th style="width: 10%; text-align: center; ">รหัส</th>
 												<th style="width: 15%; text-align: center;">ชื่อผู้ใช้</th>
@@ -47,11 +47,11 @@
                                                 <td style="padding-top: 25px;">@{{data.Level}}</td>
                                                 <td style="padding-top: 25px;"> 
                                                     <center><button ng-click="EditUser()" class="edit-button">
-                                                        <i><img src="{{asset('storage/img/i-3.png')}}"></i>
+                                                        <i><img src="{{asset('storage/img/icon/i-3.png')}}"></i>
                                                     </button></center></td>
                                                 <td style="padding-top: 25px;">
                                                     <center><button ng-click="DeleteUser()" class="delete-button">
-                                                        <i><img src="{{asset('storage/img/i-2.png')}}"></i>
+                                                        <i><img src="{{asset('storage/img/icon/i-2.png')}}"></i>
                                                     </button></center></td>
                                             <tr>
                                     </table>

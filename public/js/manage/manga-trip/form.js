@@ -52,6 +52,34 @@
         $scope.EditTrip = function(data){
          
             $("#modal-managetrip-Edit").modal('show');
+
+            $scope.Deletephoto = function(data){
+              console.log("Delete",data);
+            }
+
+            $scope.addPhotofile = function(data){
+
+              $('#fileUpload').trigger('click'); 
+    
+              document.getElementById("fileUpload").addEventListener("change", function(){
+                var fullPath = this.value; // fetched value = C:\fakepath\fileName.extension
+                var fileName = fullPath.split(/(\\|\/)/g).pop();  // fetch the file name
+                console.log(fileName);
+              }, false);      
+                
+            }
+
+            $('#selectproductedit').change(function(){
+              console.log($(this).val());
+          })
+
+            $scope.Delete = function(){
+              console.log("Delete");
+          }
+
+          $scope.SavemodalSave = function(){
+            window.location.reload();
+          }
            
         }
 
@@ -59,6 +87,10 @@
             
             $("#modal-confirm-Delete").modal('show');
             
+        }
+
+        $scope.SavemodalDelete = function(){
+          window.location.reload();
         }
 
      });
